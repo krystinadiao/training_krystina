@@ -1,0 +1,98 @@
+.bv-logo img{
+  padding:30px;
+  margin-bottom:50px;
+  max-width: 400px;
+  min-width:300px;
+}
+
+body {
+  padding-top:30px;
+  background-color: white;
+  margin: 0 auto;
+  font-family:"canada-type-gibson", sans-serif;
+}
+
+
+.block-text {
+  background-color: #f9f9f9;
+  color: #383838;
+  font-family:Arial, sans-serif;
+
+  width: 100%;
+  text-align:center;
+  margin: 0 auto;
+}
+
+.block-chart h1{
+  color: #8c8c8c;
+  font-size: 30px;
+  text-align:left;
+  font-family:"canada-type-gibson", sans-serif;
+  padding:0px;
+}
+
+.block-chart h2{
+  color: #8c8c8c;
+  font-size: 25px;
+  text-align:left;
+  font-family:"canada-type-gibson", sans-serif;
+  padding:0px 0px 10px 0px;
+}
+
+h1 {
+  font-size: 45px;
+  color: #383838;
+  text-align:center;
+  font-family:"canada-type-gibson", sans-serif;
+  padding:20px;
+}
+
+
+
+#content{
+  width:90vw;
+  max-width:1300px;
+	margin: 0 auto;
+	padding: 0px 70px 100px 70px;
+}
+
+div.idk-what-im-doing {
+  margin-bottom:30px;
+  width:97% !important;
+  margin-left: 1.5%;
+}
+
+div.insights{
+  background-color:#dfefec !important;
+}
+
+div.insights h1{
+  color:#383838;
+}
+
+div.content-text-sub{
+	width: 100%;
+  padding:20px;
+  padding-top:10px;
+	color:#4e4e4e;
+	background-color: #f9f9f9;
+}
+
+div.block-chart{
+	height: auto;
+	position: relative;
+	overflow:hidden;
+	padding-bottom:30px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+tr {
+  vertical-align: top;
+}
+.post {
+  width: 500px;
+}

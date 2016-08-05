@@ -1,0 +1,256 @@
+.bv-logo img{
+  padding:30px;
+  max-width: 400px;
+  min-width:300px;
+}
+
+body {
+  background-color: white;
+  margin: 0 auto;
+  font-family:"canada-type-gibson", sans-serif;
+  font-size:16px !important;
+}
+
+
+.block-text {
+  background-color: #ededed;
+  color: #383838;
+  font-family:Arial, sans-serif;
+
+  width: 100%;
+  text-align:center;
+  margin: 0 auto;
+}
+
+.block-chart h1{
+  color: #8c8c8c;
+  font-size: 40px;
+  text-align:left;
+  font-family:"canada-type-gibson", sans-serif;
+  padding:0px;
+}
+
+.block-chart h2{
+  color: #535353;
+  font-size: 35px;
+  text-align:left;
+  font-family:"canada-type-gibson", sans-serif;
+  padding:0px 0px 10px 0px;
+  line-height:150%;
+
+}
+
+
+
+
+#content{
+  width:95vw;
+	margin: 0 auto;
+	padding: 0px 70px 100px 70px ;
+}
+
+.content-block{
+  width:100%;
+  margin:0;
+  margin-bottom:80px;
+  padding-bottom:80px;
+  border-bottom:10px solid #f0f0f0;
+}
+.content-block2{
+  width:100%;
+  margin:0;
+  margin-bottom:80px;
+  padding-bottom:80px;
+}
+
+.introduction{
+  width: 60vw;
+  left:20vw;
+  position:relative;
+  line-height:150%;
+  height:auto;
+}
+
+.introduction h2{
+  color: #636363;
+  font-size: 30px;
+  text-align:left;
+  font-family:"canada-type-gibson", sans-serif;
+  padding:0px;
+}
+
+
+div.introduction-bg {
+  height:auto;
+  margin-bottom:50px;
+  background-color:#ededed !important;
+  margin-top:30px;
+  width:100vw !important;
+}
+
+
+div.conclusion{
+  background-color:#ededed !important;
+  padding:25px 250px 50px 250px;
+  margin-bottom:200px;
+  line-height:150%;
+}
+
+.conclusion h1{
+  color: #8c8c8c;
+  font-size: 40px;
+  text-align:left;
+  font-family:"canada-type-gibson", sans-serif;
+  padding:0px;
+}
+
+
+
+div.insights{
+  background-color:#dfefec !important;
+  padding:30px;
+  margin-bottom:40px;
+  line-height:150%;
+}
+
+div.insights h1{
+  font-size:25px;
+  color:#383838;
+}
+
+div.content-text-sub{
+	width: 100%;
+  padding:30px;
+  padding-top:10px;
+	color:#4e4e4e;
+	background-color: #f9f9f9;
+  line-height:150%;
+  min-height:100% !important;
+}
+
+div.small-chart{
+	width: 100%;
+  padding: 5px 10px 10px 10px;
+	color:#4e4e4e;
+	background-color: #f9f9f9;
+
+}
+
+.big-chart{
+  min-height:50vh !important;
+  background-color:#f9f9f9;
+
+  width: 100%;
+  padding:30px;
+  padding-top:10px;
+  color:#4e4e4e;
+  background-color: #f9f9f9;
+  line-height:150%;
+  min-height:100% !important;
+}
+
+div.block-chart{
+	height: auto;
+	position: relative;
+	overflow:hidden;
+	padding-bottom:30px;
+}
+
+.header{
+  width:100vw;
+  background-image: url("/training/elements/pattern.jpg");
+  height:500px;
+  color: white;
+  background-repeat:no-repeat;
+  background-position: bottom;
+  background-size: cover;
+
+}
+
+.header-text{
+  position: relative;
+  top: 70%;
+  text-align:center;
+  font-size:100px;
+  font-family: Rockwell;
+}
+
+
+html,body {
+  margin: 0;
+  margin-top:-20px;
+  padding: 0;
+  overflow-x:hidden;
+}
+tr {
+  vertical-align: top;
+}
+.post {
+  width: 500px;
+}
+
+
+
+
+@media only screen and (min-width: 200px) and (max-width: 1200px) {
+  .header-text{
+    font-size:50px;
+  }
+
+  .block-chart h1{
+    font-size: 30px;
+  }
+
+  .block-chart h2{
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1190px) and (max-width: 1500px) {
+  .header-text{
+    font-size:75px;
+  }
+  .block-chart h1{
+    font-size: 30px;
+  }
+
+  .block-chart h2{
+    font-size: 25px;
+  }
+
+}
+
+
+b{
+  color:#e49b8a;
+}
+
+.chartclass{
+min-height:100% !important;
+max-height:800px !important;
+
+}
+
+h3 {
+  font-size:17px !important;
+  padding-left:5px !important;
+  padding-bottom:5px!important;
+  color:#8c8c8c !important;
+  font-family:"canada-type-gibson", sans-serif;
+}
+
+
+.btn{
+  border:1px solid #dbdada !important;
+  width:100px;
+  background-color:#fff;
+  margin-right:5px;
+  margin-bottom:5px;
+  margin-left:25%;
+  margin-top:5px;
+}
+
+.btn:hover{
+  background-color:#e9e7e7;
+  border:1px solid #e9e7e7 !important;
+}

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html; charset=UTF8">
+<head>
+    <title>Connections Knowledgebase Analysis</title>
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="/training/css/c3.min.css" type="text/css">
+    <link rel="stylesheet" href="/training/css/maintest.css" type="text/css">
+
+    <!-- Dependencies -->
+    <script src="/training/js/jquery-2.1.4.min.js"></script>
+    <script src="/training/js/d3.v3.js"></script>
+
+    <!-- Data Visualization -->
+    <script src="/training/js/c3-0.4.10/c3.min.js"></script>
+
+
+    <!-- Bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <script src="https://use.typekit.net/gdt7uix.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- Page scripts -->
+    <!-- These are all the functions that will be called by the test_load.js page. -->
+    <script src="/training/js/test_functions.js"></script>
+
+    <!-- test styling -->
+    <style>
+
+
+    </style>
+
+</head>
+
+<body>
+<!-- The divs that each chart will load into. You can change these names but make sure to update your scripts in the test_load.js page -->
+
+<div class="main-container-bah">
+
+
+<div class="header">
+<div class="header-text">
+Connections Knowledgebase
+</div>
+</div>
+
+  <div class="block-chart">
+    <div class="content-text-sub introduction-bg">
+      <div class="introduction">
+
+    <h2>Who?</h2>
+    The support team (Front Door) consists of 10 people - 8 of which handle anything
+    outside of Connections, and <b>2 of which solely focus on Connections cases.</b><br/>
+
+    <h2>Why?</h2>
+    Before the Connections Knowledgebase implemenation, there was only a 12 page FAQ document
+    for the entire product, which proved difficult to navigate and not well advertised.
+    Other than the FAQ, there ws no searchable area for common questions.
+     The support team received <b>2,909 Connections cases</b> during FY16Q3. The majority of these
+     cases are self service questions, meaning the clients should be able to solve the issues, with
+     the proper documentation,
+     without contacting Bazaarvoice.
+    <br/>
+
+    <h2>How?</h2>
+    Creation of a Knowledgebase!  This notion follows the footsteps of the Curations Knoledgebase, which was
+    created after Hackathon.  The Curations KB is now receiving nearly <b>150 unique visitors</b> per month.
+    The necessity of a Knowledgebase can be seen through the immense weight on two peoples' shoulders
+    in Front Door, handling (on average) over 350 cases per month.  Having a simple, well-structured KB
+    allows relief from members of support and a quicker turn-around time for client inqueries.
+
+    <br/>
+    <h2>What?</h2>
+    So what is this project?  <b>The purpose of this project is to analyze and discuss the effectiveness of
+    having this Connections Knowledgebase.</b>  By viewing data such as the change in the average amount of
+    time spent on each ticket, the breakdown of case issues, and the current traction of the knowledgebase,
+    we are better able to determine the effectiveness and value of a knowledgebase.  This information can be
+    used for future product KB decisions, as well as understanding how much manpower and money is saved
+    by having a KB.<br/></br>
+    The date ranges for data collection are as follow:
+      <ul>
+        <li>Before Implementation of Knowledgebase: Dec 14, 2015 - Jun 14, 2016 <b>(180 days)</b></li>
+        <li>After Implementation of Knowledgebase: Jun 21, 2016 - Jul 21, 2016 <b>(30 days)</b></li>
+      </ul>
+
+
+      </div></div>
+</div>
+
+<div id="content">
+
+
+<div class="content-block col-md-12">
+
+
+
+
+  <div class="block-chart big-chart col-md-6 ">
+  <div class="content-text-sub ">
+    <h2>Average Hours Spent with each Department Before
+       and After Knowledgebase Implementation</h2>
+  <div id="barchart" class="chartclass"></div>
+  </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="col-md-12">
+    <div class="insights">
+
+      Every department that is prevalent to Connections saw a decrease
+      in amount of time spent per ticket
+       after implementation of the knowledgebase.
+       The Front Door team in Client Services is typically the first line of contact for these cases.
+       Their average time per ticket decreased over <b>60%</b> after KB implementation.<br/><br/>
+       Overall, Bazaarvoice saw a drop of <b>23%</b> of time spent per ticket.
+<br/><br/>
+
+      There has been an average of 390 Connections-specific support tickets
+      per month in the past 7 months.  If each ticket costs Bazaarvoice 52.78 hours (before KB implementation),
+       the total amount of time required, across all relevant departments, is about <b>20,584</b> hours.
+       Using the number after KB implementation (40.6 hours per ticket), the total amount of time to close
+       a ticket drops to <b>15,834</b> hours.
+<br/><br/>
+       <b>This is 4,750 hours saved by the company, overall.</b>
+
+
+
+    </div>
+  </div>
+
+</div>
+
+</div>   <!-- col-md-12 end -->
+
+
+
+
+<div class="content-block col-md-12">
+
+  <div class="block-chart big-chart col-md-6">
+      <div class="content-text-sub">
+    <h2>Average Hours Spent with each Department Over Time</h2>
+  <div id="datedchart" class="chartclass" style="height:100%"></div>
+</div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="col-md-12">
+    <div class="insights">
+
+      To continue backing up the previous chart, I mapped out the changes of average hours per ticket over time.
+  <br/><br/>
+      Though these categories all saw various dips and raises throughout the past half year, the ultimate
+      ending point is consistently lower than the beginning point, thus showing a solid decrease in average
+      hours spent per case.
+  <br/><br/>
+  The Knowledgebase implementation date is included as reference, as well as the portal update date.
+  The portal update is the update of actually putting a link to the knowledgebase on the Connections portal
+  that the clients utilize to access the product.<br/><br/>
+  Below, you can see the individual department graphs displayed alongside the number of cases that dealt
+  with those speciic departments.
+<br/><br/>
+<b>All departments have seen an overall downward trend of number of hours spent on average for a Connections ticket</b>
+
+    </div>
+  </div>
+
+          <div class="col-lg-3">
+            <div class="small-chart">
+              <h3>Client Services (Front Door)</h3>
+              <div id="frontdoor2"></div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="small-chart">
+              <h3>Engineering</h3>
+            <div id="engineering2"></div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="small-chart">
+              <h3>Other Departments</h3>
+            <div id="other2"></div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="small-chart">
+              <h3>Bazaarvoice Overall</h3>
+            <div id="bv2"></div>
+            </div>
+          </div>
+
+</div>
+</div>   <!-- col-md-12 end -->
+
+
+
+
+<div class="content-block col-md-12">
+
+  <div class="block-chart big-chart col-md-6">
+      <div class="content-text-sub">
+    <h2>Cases by Nature of Issue Before and After Knowledgebase</h2>
+    <h3>Click each slice to drill down into more specific categories.</h3>
+    <br/>
+
+<div class="col-md-6">
+  <div id="donutChart1" class="chartclass" style="height:100%"></div>
+<input type="button" class="btn" id="A" value="Back"></input></br></br></br></br></br>
+</div>
+
+<div class="col-md-6">
+  <div id="donutChart2" class="chartclass" style="height:100%"></div>
+<input type="button" class="btn" id="B" value="Back"></input></br></br>
+</div>
+
+</div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="col-md-12">
+    <div class="insights">
+
+    A primary reason for the push of a knowledgebase was due to the fact that a significant percentage
+    of the issues submitted by clients were actually self service questions.  <b>With the right outlet, the clients
+    would be able to resolve many of the simple requests on their own.</b>  For example, a large percentage of cases
+    were on the issues of adding a retailer, fixing misrouted content, training requests, login and sign-up issues, etc.
+<br/><br/>
+    These issues are simple and straightfoward to solve, thus putting them through manually, waiting for the support
+    team to get back to them, and the back and forth conversations create a lot of excess, unecessary time, for both the
+    client and Bazaarvoice.
+<br/><br/>
+Before the knowledgebase, <b>73%</b> of case issues were topics that could be included in the knowledgebase.  This
+percentage decreased to <b>67.2%</b> after the implementation of the knowledegbase.  Though it is not a significant change,
+it is still significant, given the short period the KB has been live (less than two months!).  Since exposure to the Knowledgebase
+is still relatively low, many clients who call and email tickets are still unaware of the existence of a KB.  The support team has
+taken the intiative to <b>redirect these clients towards the knowledgebase</b> and include in their email footers a direct link
+to the KB. <br/><br/>
+
+<b>In about 40 days, 6% less of the Connections tickets are issues that are covered in the knowledgebase.</b>
+
+    </div>
+  </div>
+
+</div>
+
+</div>   <!-- col-md-12 end -->
+
+
+
+<div class="content-block col-md-12">
+
+  <div class="block-chart big-chart col-md-6">
+      <div class="content-text-sub">
+    <h2>Number of Cases Per Month</h2>
+
+
+  <div id="casesPerMonth" class="chartclass" style="height:100%"></div>
+
+</div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="col-md-12">
+    <div class="insights">
+
+Though there has only been one full month of data to view the trend of the number of cases per month,
+it can be seen that there is a visible decrease - the largest negative percent change we have seen.<br/><br/>
+<b>The number of cases per month has gone down 19% since knowledgebase implementation.</b>
+
+
+    </div>
+  </div>
+
+
+</div>
+
+</div>   <!-- col-md-12 end -->
+
+<div class="content-block col-md-12">
+
+  <div class="block-chart big-chart col-md-6">
+      <div class="content-text-sub">
+    <h2>Connections Knowledgebase Unique Users</h2>
+
+
+  <div id="uniqueUsers" class="chartclass" style="height:100%"></div>
+
+</div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="col-md-12">
+    <div class="insights">
+
+  This information, pulled from Google Analytics, shows the general upward trend of unique visitors to the new knowledgebase.
+  Though hits vary significantly from day to day, it's visible that more and more clients are becoming aware of the existence
+  of a knowledgebase and turning towards it for quick answers, rather than submitting a ticket.
+
+
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <div class="small-chart">
+      <div id="analytics1"></div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="small-chart">
+    <div id="analytics2"></div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="small-chart">
+    <div id="analytics3"></div>
+    </div>
+  </div>
+
+
+
+</div>
+
+</div>   <!-- col-md-12 end -->
+
+
+
+
+
+
+<div class="col-md-12">
+<div class="conclusion">
+    <h1>Conclusion and Actionable Insights</h1>
+
+    The Connections Knowledgebase is still slowly gaining traction.  A large number of cases are still
+    coming in, asking questions that are covered by the knowledgebase; however, by looking at the decrease in time
+    spent per ticket, and the small, but significant, decrease in cases pertaining to knowledgebase information, it is
+    clear that many of the clients are being made aware of the KB, being redirected to the KB, and using it for future
+    issues.<br/><br/>
+    Our initial goals with this project (for the purpose of keeping in line with Product Training's overarching goals) were as follows:
+  </br>
+  <ul>
+    <li>Keep our employees up to date with products</li>
+    <li>Make our porducts easy for our customers to use</li>
+    <li>Make supporting our products as easy as possible</li>
+  </ul>
+  Based on these metrics, <b>our goals have been reached!</b>
+<br/><br/>
+Moving forward, these metrics should continue to be tracked to monitor the growth of the knowledgebase, as well as the impacton support.
+
+A few specific actions that can be taken are:<br/>
+<ul>
+  <li>Focus on issues that continue to recurringly be sumitted as tickets, dsepite being covered in the knowledgebase. </li>
+  <li>Ensure these issues are well addressed in the KB. </li>
+  <li>Examine and see if the issues that are not currently covered by the KB can be covered in the future. </li>
+  <li>Continue to advertise the KB to clietns and redirect them if an issue is brought up that is clearly covered. </li>
+  <li>Continue to track these vital metrics! </li>
+</ul>
+
+
+<br/>
+
+
+Thank you to everyone who helped me along the way: Drew Castillo, Staci Counts, Sadie Pelissero, Sharon Hasting, Morgan Hancock, Juliette Kernion, and Shawna Kinslow!
+      </div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+</body>
+
+<!-- The script that actually loads all your functions to make the page 'build' -->
+<script src="/training/js/test_load.js"></script>
+<script src="/training/js/donutCharts.js"></script>
+</html>
