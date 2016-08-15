@@ -128,6 +128,10 @@ div.content-text-sub{
   min-height:100% !important;
 }
 
+div.content-text-sub h1{
+  font-size:50px;
+}
+
 div.small-chart{
 	width: 100%;
   padding: 5px 10px 10px 10px;
@@ -159,7 +163,7 @@ div.block-chart{
 .header{
   width:100vw;
   background-image: url("/elements/pattern.jpg");
-  height:500px;
+  height:300px;
   color: white;
   background-repeat:no-repeat;
   background-position: bottom;
