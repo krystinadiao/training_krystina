@@ -163,7 +163,7 @@ div.block-chart{
 
 .header{
   width:100vw;
-  background-image: url("/elements/pattern.jpg");
+  background-image: url("/elements/pattern-blur.jpg");
   height:300px;
   color: white;
   background-repeat:no-repeat;
@@ -177,7 +177,7 @@ div.block-chart{
   top: 40%;
   text-align:center;
   font-size:100px;
-  font-family:  Arvo, serif !important;
+  font-family:  "canada-type-gibson", sans-serif;
 }
 
 
